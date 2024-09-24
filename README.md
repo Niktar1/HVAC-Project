@@ -1,5 +1,6 @@
 # HVAC-Project
-A landing page for Heating, Ventilation, and Air Conditioning (HVAC) business.
+A landing page for Heating, Ventilation, and Air Conditioning (HVAC) business. 
 
-The website curently running on free hosting, if you don't want to download the project you can visit it online here:
+The website currently running on free hosting, if you don't want to download the project you can visit it online here:
 http://niklanding.mypressonline.com/
+
