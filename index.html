@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HVAC</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <!-- Linking SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Linking Choices JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- Linking Fontawesome for icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="dark"></div>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-1">
+                    <div class="social">
+                        <a class="social__item" href="#" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="social__item" href="#" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="social__item" href="#" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="social__item" href="#" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-2">
+
+                    <nav class="nav">
+                        <div class="nav__menu">
+                            <div class="nav__left">
+                                <ul class="nav__list">
+                                    <li class="nav__link">
+                                        <a class="active" href="#">Home</a>
+                                    </li>
+                                    <li class="nav__link">
+                                        <a href="#">About</a>
+                                    </li>
+                                    <li class="nav__link">
+                                        <a href="#">Shop</a>
+                                    </li>
+                                </ul>
+                            </div>
+    
+                            <div class="logo">
+                                <a href="#">
+                                    <img src="assets/images/logo.png.webp" alt="">
+                                </a>
+                            </div>
+
+                            <div class="nav__right">
+                                <ul class="nav__list">
+                                    <li class="nav__link">
+                                        <a href="#">Pages</a>
+                                    </li>
+                                    <li class="nav__link">
+                                        <a href="#">News</a>
+                                    </li>
+                                    <li class="nav__link">
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header__phone">
+                                <div class="phone__num">1–688–688-94</div>
+                            </div>
+                        </div>
+                        
+                    </nav>
+                </div>
+
+
+                <!-- Burger Menu -->
+                <button class="header__burger-btn" id="burger">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <nav class="menu" id="menu">
+                    <div class="menu__label">Navigation</div>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link active" href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">
+                                About
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">
+                                Shop
+                            </a>
+                        </li>
+                        <li class="menu__item select__container">
+                            <div class="menu__link menu__select"  data-collapse="#menu-collapse">
+                                <div class="select__label">
+                                    <span class="menu__link">Pages</span>
+                                </div>
+                                <div class="select__content">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Cart</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Checkout</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">wishlist</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Product Details</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Blog Details</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="menu__item item__bottom" id="1">
+                            <a class="menu__link" href="#">
+                                News
+                            </a>
+                        </li>
+                        <li class="menu__item item__bottom" id="1">
+                            <a class="menu__link" href="#">
+                                contact
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="social menu-social">
+                        <a class="social__item" href="#" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="social__item" href="#" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="social__item" href="#" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="social__item" href="#" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+
+                </nav> <!-- Burger Menu -->
+            </div> <!-- /.row -->
+        </div> <!-- /.container-->
+    </header>
+
+    <div class="intro">
+
+        <div id="slider-container">
+            <div id="top">
+                <div class="arrow-l">
+                    <div class="arrow arrow-left"></div>
+                </div>
+                <div id="frame">
+                    <div id="slider">
+                        <div class="slider-image img1">
+                            <div class="slider__item">
+                                <div class="slider__content">
+                                    <h2 class="slider__title">Keeping your home comfortable all year long</h2>
+                                    <div class="slider__text">that air conditioning systems are regularly maintained.
+                                    </div>
+                                    <button class="primary__btn">Contact Us</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-image img2">
+                            <div class="slider__item slider__item2">
+                                <div class="slider__content slider__content2">
+                                    <h2 class="slider__title">Keeping your home comfortable all year long</h2>
+                                    <div class="slider__text">that air conditioning systems are regularly maintained.
+                                    </div>
+                                    <button class="primary__btn">Contact Us</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow-r">
+                    <div class="arrow arrow-right"></div>
+                </div>
+            </div>
+            <div id="bottom"></div>
+        </div>
+
+
+    </div> <!-- /.intro-->
+    <div class="benefits">
+        <div class="container">
+            <div class="benefits__inner">
+                <div class="benefits__item">
+                    <span>
+                        <img src="/assets/images/benifit/benifit-1.png.webp" alt="benefit1">
+                    </span>
+                    <p>No Upfront Payments</p>
+                </div>
+                <div class="benefits__item">
+                    <span>
+                        <img src="/assets/images/benifit/benifit-2.png.webp" alt="benefit1">
+                    </span>
+                    <p>Satisfaction Guarantee</p>
+                </div>
+
+                <div class="benefits__item">
+                    <span>
+                        <img src="/assets/images/benifit/benifit-3.png.webp" alt="benefit1">
+                    </span>
+                    <p>Emergency Service</p>
+                </div>
+                <div class="benefits__item">
+                    <span>
+                        <img src="/assets/images/benifit/benifit-4.png.webp" alt="benefit1">
+                    </span>
+                    <p>8 Years Experience</p>
+                </div>
+
+            </div>
+        </div> <!-- /.container-->
+    </div>
+
+    <section class="section section-services">
+        <div class="container">
+            <div class="section__inner">
+                <div class="section__content">
+                    <img class="section__img" src="assets/images/icon/fan.png.webp" alt="">
+                    <div class="section__topic">our services</div>
+                    <div class="section__title">What We Can Offer You</div>
+                </div>
+                <button class="primary__btn hollow-btn service">Get a quote</button>
+            </div>
+
+
+            <!-- Swiper -->
+
+            <div class="swiper services-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="services__card">
+                            <div class="services__card-inner">
+                                <div class="services__img"><img src="/assets/images/services/services-1.jpg" alt="">
+                                </div>
+                                <div class="services__content">
+                                    <div class="services__icon"><img src="assets/images/services/tools1.webp" alt="">
+                                    </div>
+                                    <div class="services__title">Maintenace & repair</div>
+                                    <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod.</div>
+                                    <div class="services__link"><a href="#">More info</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="services__card">
+                            <div class="services__card-inner">
+                                <div class="services__img"><img src="/assets/images/services/services-2.jpg" alt="">
+                                </div>
+                                <div class="services__content">
+                                    <div class="services__icon"><img src="assets/images/services/tea-cup2.webp" alt="">
+                                    </div>
+                                    <div class="services__title">Heating & water</div>
+                                    <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod.</div>
+                                    <div class="services__link"><a href="#">More info</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="services__card">
+                            <div class="services__card-inner">
+                                <div class="services__img"><img src="/assets/images/services/services-3.jpg" alt="">
+                                </div>
+                                <div class="services__content">
+                                    <div class="services__icon"><img src="assets/images/services/light-bulb3.webp"
+                                            alt=""></div>
+                                    <div class="services__title">Cleaning & Optimization</div>
+                                    <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod.</div>
+                                    <div class="services__link"><a href="#">More info</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="services__card">
+                            <div class="services__card-inner">
+                                <div class="services__img"><img src="/assets/images/services/services-4.jpg" alt="">
+                                </div>
+                                <div class="services__content">
+                                    <div class="services__icon"><img src="assets/images/services/paint-roller4.webp"
+                                            alt=""></div>
+                                    <div class="services__title">Duct Services</div>
+                                    <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod.</div>
+                                    <div class="services__link"><a href="#">More info</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="services__card">
+                            <div class="services__card-inner">
+                                <div class="services__img"><img src="/assets/images/services/services-5.jpg" alt="">
+                                </div>
+                                <div class="services__content">
+                                    <div class="services__icon"><img src="assets/images/services/air-conditioner5.webp"
+                                            alt=""></div>
+                                    <div class="services__title">A/C Installation</div>
+                                    <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod.</div>
+                                    <div class="services__link"><a href="#">More info</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="services__card">
+                            <div class="services__card-inner">
+                                <div class="services__img"><img src="/assets/images/services/services-6.jpg" alt="">
+                                </div>
+                                <div class="services__content">
+                                    <div class="services__icon"><img src="assets/images/services/optimization6.webp"
+                                            alt=""></div>
+                                    <div class="services__title">Cleaning & Optimization</div>
+                                    <div class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod.</div>
+                                    <div class="services__link"><a href="#">More info</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="pagination-wrapper">
+                    <div class="swiper__services-pagination"></div>
+                </div>
+            </div>
+
+        </div> <!-- /.container -->
+    </section> <!-- /.section -->
+
+
+    <div class="statistics">
+        <div class="container">
+            <div class="stat">
+
+                <div class="stat__item">
+                    <img class="stat__img" src="assets\images\statistics\ci-1.png.webp" alt="">
+                    <div class="stat__num">3589</div>
+                    <div class="stat__desc">Satisfied Customers</div>
+                </div>
+                <div class="stat__item">
+                    <img class="stat__img" src="assets\images\statistics\ci-2.png.webp" alt="">
+                    <div class="stat__num">868</div>
+                    <div class="stat__desc">Professional</div>
+                </div>
+                <div class="stat__item">
+                    <img class="stat__img" src="assets\images\statistics\ci-3.png.webp" alt="">
+                    <div class="stat__num">5148</div>
+                    <div class="stat__desc">Equipment Sold</div>
+                </div>
+                <div class="stat__item">
+                    <img class="stat__img" src="assets\images\statistics\ci-4.png.webp" alt="">
+                    <div class="stat__num">25</div>
+                    <div class="stat__desc">Branches Operating</div>
+                </div>
+
+            </div><!-- /.stat -->
+        </div><!-- /.container -->
+    </div> <!-- /.statistics -->
+
+
+    <section class="section about">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg col-about-img">
+                    <div class="about__images">
+                        <img class="about__img1" src="assets/images/about/ap-1.jpg.webp" alt="">
+                        <img class="about__img2" src="assets/images/about/ap-2.jpg.webp" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg col-about">
+                    <div class="section__inner about">
+                        <div class="section__content about__content">
+                            <img class="section__img section__about-img" src="assets/images/icon/fan.png.webp" alt="">
+                            <div class="section__topic">Welcom to HVAC</div>
+                            <div class="section__title">Quality Heating & Cooling</div>
+                        </div>
+                        <p class="about__element">We provide customers with an industry leading 10-year installation
+                            warranty and a two-year service and repair warranty. With most companies,
+                            you will get a standard manufacturers warranty on installations and a
+                            one-year warranty on service and repair work. We believe our warranties
+                            set us apart from our competitors and show our commitment to quality work
+                            and service.</p>
+                        <p class="about__element"></p>
+                        <ul>
+                            <li class="about__icon"><i class="far fa-check-square"></i>Consectetur adipiscing elit, sed
+                                do eiusmod</li>
+                            <li class="about__icon"><i class="far fa-check-square"></i>Tempor incididunt ut labore et
+                                dolore magna aliqua</li>
+                            <li class="about__icon"><i class="far fa-check-square"></i>Quis ipsum suspendisse ultrices
+                                gravida.</li>
+                        </ul>
+                        <button class="primary__btn hollow-btn">Get in touch</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="quote">
+        <div class="quote__inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg">
+                        <div class="quote__form">
+                            <div class="qform__title">Get a quote</div>
+
+                            <form action="#" class="qform">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <input type="text" class="qform__input" placeholder="Name">
+                                    </div>
+                                    <div class="col-sm">
+                                        <input type="text" class="qform__input" placeholder="Phone">
+                                    </div>
+                                    <div class="col-sm">
+                                        <input type="text" class="qform__input" placeholder="Email">
+                                    </div>
+
+                                    <div class="col-sm">
+                                        <select class="qform__input js-select" placeholder="Choose services">
+                                            <option value="Choose services">Choose services</option>
+                                            <option value="Clean">Clean</option>
+                                            <option value="Repair">Repair</option>
+                                            <option value="Heating">Heating</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-long">
+                                        <textarea class="qform__input qform__messege" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="primary__btn hollow-btn quote-btn">Get a quote</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg quote__col-gl2"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="video quote__video set-bg" data-video="https://youtu.be/K4DyBUG242c">
+            <img class="video-img" src="/assets/images/quote-video.jpg.webp" alt="video">
+            <div class="play-btn video-popup"><i class="fas fa-play"></i></div>
+        </div>
+
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="section__inner section-center">
+                <div class="section__content">
+                    <img class="section__img section-center" src="assets/images/icon/fan.png.webp" alt="">
+                    <div class="section__topic">Testimonial</div>
+                    <div class="section__title">What Cilents Say?</div>
+                </div>
+            </div>
+
+
+            <div class="swiper clients-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-clients__item">
+                        <div class="clients-slide-inner">
+                            <div class="clients__review">
+                                <div class="clients__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                                    gravida.</div>
+                            </div>
+                            <div class="clients__cred">
+                                <img class="clients__img" src="/assets/images/testimonial/ta-1.png" alt=""
+                                    class="client__img">
+                                <div class="clients__name">Sophie Jefferson</div>
+                                <div class="clients__location">Swindon, England</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide swiper-clients__item">
+                        <div class="clients-slide-inner">
+                            <div class="clients__review">
+                                <div class="clients__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                                    gravida.</div>
+                            </div>
+                            <div class="clients__cred">
+                                <img class="clients__img" src="/assets/images/testimonial/ta-2.png" alt=""
+                                    class="client__img">
+                                <div class="clients__name">Cynthia Moore</div>
+                                <div class="clients__location">Kansas, USA</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide swiper-clients__item">
+                        <div class="clients-slide-inner">
+                            <div class="clients__review">
+                                <div class="clients__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                                    gravida.</div>
+                            </div>
+                            <div class="clients__cred">
+                                <img class="clients__img" src="/assets/images/testimonial/ta-3.png" alt=""
+                                    class="client__img">
+                                <div class="clients__name">Andre Curtis</div>
+                                <div class="clients__location">Dresden, Germany</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide swiper-clients__item">
+                        <div class="clients-slide-inner">
+                            <div class="clients__review">
+                                <div class="clients__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
+                                    gravida.</div>
+                            </div>
+                            <div class="clients__cred">
+                                <img class="clients__img" src="/assets/images/testimonial/ta-5.png" alt=""
+                                    class="client__img">
+                                <div class="clients__name">Matthew Dix</div>
+                                <div class="clients__location">Warsaw, Poland</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="pagination-wrapper">
+                    <div class="swiper__clients-pagination"></div>
+                </div>
+            </div>
+
+        </div> <!-- /.container -->
+    </div>
+
+    <div class="callto">
+        <div class="callto__content">
+            <div class="callto__topic">Modern Styling for your Modern Life</div>
+            <div class="callto__text">less power Consume, more cooling</div>
+            <button class="primary__btn">installation Now</button>
+        </div>
+    </div>
+
+
+    <section class="section section-products">
+        <div class="container">
+            <div class="section__inner">
+                <div class="section__content">
+                    <img class="section__img" src="assets/images/icon/fan.png.webp" alt="">
+                    <div class="section__topic">HVAC PRODUCTS</div>
+                    <div class="section__title">Heating & Cooling Store</div>
+                </div>
+                <button class="primary__btn hollow-btn">View all products</button>
+            </div>
+
+            <div class="products">
+                <!-- Item 1 -->
+                <div class="products__item">
+                    <div class="img__wrapper">
+                        <img class="products__img" src="/assets/images/products/product-1.jpg.webp" alt="">
+                    </div>
+                    <div class="products__text">
+                        <a href="#">Heat Storm Wall Gray HS-1000-WX Deluxe Space Saving-1000 W</a>
+                    </div>
+                    <div class="products__price">$97.0</div>
+                    <a class="products__add" href="#">Add to cart</a>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="products__item">
+                    <img class="products__img" src="/assets/images/products/product-2.jpg.webp" alt="">
+                    <div class="products__text">
+                        <div class="label"><span>New</span></div>
+                        <a href="#">Stiebel Eltron 074058 120-Volt 1500 Watts Wall Mounted Electric</a>
+                    </div>
+                    <div class="products__price">$25.0</div>
+                    <a class="products__add" href="#">Add to cart</a>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="products__item">
+                    <img class="products__img" src="/assets/images/products/product-3.jpg.webp" alt="">
+                    <div class="products__text">
+                        <div class="label bg-red"><span>-10%</span></div>
+                        <a href="#"> Vornadobaby Purio Nursery Air Purifier with True HEPA Filter</a>
+                    </div>
+                    <div class="products__price">$52.0</div>
+                    <a class="products__add" href="#">Add to cart</a>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="products__item">
+                    <img class="products__img" src="/assets/images/products/product-4.jpg.webp" alt="">
+                    <div class="products__text">
+                        <div class="label bg-darkbl"><span>Out of stock</span></div>
+                        <a href="#">Heat Storm Wall Gray HS-1000-WX Deluxe Space Saving-1000 W</a>
+                    </div>
+                    <div class="products__price">$68.0</div>
+                    <a class="products__add" href="#">Add to cart</a>
+                </div>
+            </div> <!-- /.products -->
+        </div> <!-- /.container -->
+    </section> <!-- /.section -->
+
+
+    <section class="section section-news">
+        <div class="container">
+            <div class="section__inner section-center">
+                <div class="section__content">
+                    <img class="section__img section-center" src="assets/images/icon/fan-2.png.webp" alt="">
+                    <div class="section__topic">Latest News</div>
+                    <div class="section__title">HVAC Tips & Tricks</div>
+                </div>
+            </div>
+
+
+            <div class="news">
+                <div class="row">
+                    <div class="col-md">
+                        <!-- News Item1 -->
+                        <div class="news__item">
+                            <img class="news__img" src="/assets/images/blog/news-1.jpg.webp" alt="">
+                            <div class="news__content">
+                                <div class="label label-news"><span>Tips & tricks</span></div>
+                                <a class="news__title" href="#">
+                                    <h4>21 Air Conditioner Maintenance and Home Cooling Tips</h4>
+                                </a>
+                                <span class="news__credentials">
+                                    <span class="news__author">By <span class="news__name">Eleanor Hampton</span></span>
+                                    |
+                                    <span class="news__date">Jun 24, 2020</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <!-- News Item2 -->
+                        <div class="news__item">
+                            <img class="news__img" src="/assets/images/blog/news-2.jpg.webp" alt="">
+                            <div class="news__content">
+                                <div class="label label-news"><span>Tips & tricks</span></div>
+                                <a class="news__title" href="#">
+                                    <h4>21 Air Conditioner Maintenance and Home Cooling Tips</h4>
+                                </a>
+                                <span class="news__credentials">
+                                    <span class="news__author">By <span class="news__name">Eleanor Hampton</span></span>
+                                    |
+                                    <span class="news__date">Jun 24, 2020</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <!-- News Item3 -->
+                        <div class="news__item">
+                            <img class="news__img" src="/assets/images/blog/news-3.jpg.webp" alt="">
+                            <div class="news__content">
+                                <div class="label label-news"><span>Tips & tricks</span></div>
+                                <a class="news__title" href="#">
+                                    <h4>21 Air Conditioner Maintenance and Home Cooling Tips</h4>
+                                </a>
+                                <span class="news__credentials">
+                                    <span class="news__author">By <span class="news__name">Eleanor Hampton</span></span>
+                                    |
+                                    <span class="news__date">Jun 24, 2020</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- /.row -->
+            </div> <!-- /.news -->
+        </div> <!-- /.container -->
+    </section> <!-- /.section -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__banner">
+                <div class="row">
+                    <div class="col-lg">
+                        <div class="banner__content">
+                            <span class="banner__topic">Contact with us</span>
+                            <h2 class="banner__text">Contact us now to get quote</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-lg col-banner">
+                        <div class="banner__support">
+                            <img class="banner__icon" src="assets/images/icon/support.png.webp" alt="">
+                            <div class="support_content">
+                                <span class="support__topic">Call us now</span>
+                                <h2 class="support__num">1–688–688-94</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="footer__inner">
+                <div class="row">
+                    <div class="col-sm4">
+                        <h4 class="footer__title"><span>Contact us</span></h4>
+
+                        <ul class="footer__list">
+                            <li class="list__li">Address: 60 East 65th Street, New York City</li>
+                            <li class="list__li">Email: Hvac.support@gmail.com</li>
+                            <li class="list__li">Phone Number: 1-688-688-94</li>
+                        </ul>
+
+                        <div class="footer__social">
+                            <span>Follow us on: </span>
+                            <div class="social social-footer">
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div> <!-- /.footer__inner -->
+
+                    <div class="col-sm4">
+                        <h4 class="footer__title"><span>Quick links</span></h4>
+                        <div class="row">
+                            <div class="col-sm">
+                                <ul class="footer__links">
+                                    <li class="list__link"><a href="#">About us</a></li>
+                                    <li class="list__link"><a href="#">Contact us</a></li>
+                                    <li class="list__link"><a href="#">Our services</a></li>
+                                    <li class="list__link"><a href="#">Latest projects</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm">
+                                <ul class="footer__links">
+                                    <li class="list__link"><a href="#">Service & Repair</a></li>
+                                    <li class="list__link"><a href="#">AC Maintation</a></li>
+                                    <li class="list__link"><a href="#">Routine Care</a></li>
+                                    <li class="list__link"><a href="#">Cooling Systems</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm4">
+                        <h4 class="footer__title"><span>What’s news</span></h4>
+                        <div class="footer__news">
+                            <div class="fnews__item">
+                                <img class="fnews__img" src="assets/images/blog/news-page-1.webp" alt="">
+                                <div class="fnews__inner">
+                                    <div class="fnews__title">
+                                        <h5><a href="#">168 HVAC Business Slogan Ideas</a></h5>
+                                    </div>
+                                    <div class="fnews__date"><span>Jun 23, 2020</span></div>
+                                </div>
+                            </div>
+
+                            <div class="fnews__item">
+                                <img class="fnews__img" src="assets/images/blog/news-page-2.webp" alt="">
+                                <div class="fnews__inner">
+                                    <div class="fnews__title">
+                                        <h5><a href="#">168 HVAC Business Slogan Ideas</a></h5>
+                                    </div>
+                                    <div class="fnews__date"><span>Jun 23, 2020</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm4">
+                        <h4 class="footer__title"><span>Subscribe</span></h4>
+
+                        <span>Please subsribe to see latest Newsletters.</span>
+                        <form class="footer__form" action="#">
+                            <input class="qform__input qform-sub" type="text" placeholder="Email">
+                            <button class="primary__btn footer-btn" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+
+                </div> <!-- /.row -->
+            </div> <!-- /.footer__inner -->
+
+            <div class="footer__copy">
+                <span>
+                    Copyright ©2024 All rights reserved | This template was recreated with <i class="fas fa-heart"></i>
+                    by <b>Nikita</b>
+                </span>
+            </div>
+
+        </div> <!-- /.container -->
+    </footer>
+
+
+    <!-- linking SwiperJS script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Linking Choices JS -->
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+    <!-- Linking JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Linking custom script -->
+    <script src="assets\js\script.js"></script>
+
+
+</body>
+
+</html>
