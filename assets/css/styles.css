@@ -285,12 +285,12 @@ h4 {
 }
 
 .img1 {
-    background: url(/assets/images/intro/hero-1.jpg.webp) no-repeat;
+    background: url(/assets/images/intro/hero-1.webp) no-repeat;
     background-position: center;
 }
 
 .img2 {
-    background: url(/assets/images/intro/hero-1.jpg.webp) no-repeat;
+    background: url(/assets/images/intro/hero-1.webp) no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -1023,7 +1023,7 @@ iframe, .video-img {
     display: flex;
     justify-content: center;
 
-    background-image: url(/assets/images/call-bg.jpg.webp);
+    background-image: url(/assets/images/call-bg.webp);
     background-size: cover;
     background-position: top center;
     overflow: hidden;
